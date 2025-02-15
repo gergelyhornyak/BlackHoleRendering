@@ -2,34 +2,9 @@
 
 CompSci Masters Semester One coursework, extending an existing project to render a black hole.
 
-# IMPORTANT
-
-For coursework moderation, consider the two following branches as the final versions of the project:
-
-- [eigen-omp branch](https://github.coventry.ac.uk/hornyakj/7003_BlackHoleRender/tree/eigen_omp)
-- [custom-cuda-antialias branch](https://github.coventry.ac.uk/hornyakj/7003_BlackHoleRender/tree/custom_cuda_antialias)
-
 ## Briefing
 
 This project covers an implementation of a parallel-distributed version of the existing Black Hole Rendering program.
-
-
-Each branch hosts a flavour of the original source code:
-
-- [eigen branch](https://github.coventry.ac.uk/hornyakj/7003_BlackHoleRender/tree/eigen) with the original Eigen library,
-- [eigen-omp branch](https://github.coventry.ac.uk/hornyakj/7003_BlackHoleRender/tree/eigen_omp) utilising the Eigen library and OpenMP library to create parallel processes,
-- [custom-branch](https://github.coventry.ac.uk/hornyakj/7003_BlackHoleRender/tree/custom) which is customised with using self-written matrix transformation algorithms replacing Eigen library),
-- [custom-omp branch](https://github.coventry.ac.uk/hornyakj/7003_BlackHoleRender/tree/custom_omp) an OpenMP flavour built on the custom branch. The final version of the CPU-based versions as well.
-- [custom-omp-overloaded branch](https://github.coventry.ac.uk/hornyakj/7003_BlackHoleRender/tree/custom_omp_overloaded) experimenting with operator overloading, based on the custom_omp branch,
-- [custom-cuda branch](https://github.coventry.ac.uk/hornyakj/7003_BlackHoleRender/tree/custom_cuda) a Cuda flavour, built on the custom branch, which is designed for running on GPUs,
-- [custom-cuda-dynamic branch](https://github.coventry.ac.uk/hornyakj/7003_BlackHoleRender/tree/custom_cuda_dynamic) which focuses on dynamic grid and block size allocation,
-- [custom-cuda-dynamic-coalesced branch](https://github.coventry.ac.uk/hornyakj/7003_BlackHoleRender/tree/custom_cuda_dynamic_coalesced) where experiments are carried out to see if memory is coalesced would result in faster computing on GPUs,
-- [custom-cuda-dynamic-overloaded_branch](https://github.coventry.ac.uk/hornyakj/7003_BlackHoleRender/tree/custom_cuda_dynamic_overloaded) utilises built-in float4 and char4 structures to use SIMD parallel processing.
-- [custom-cuda-antialias branch](https://github.coventry.ac.uk/hornyakj/7003_BlackHoleRender/tree/custom_cuda_antialias) branch is the final version of the GPU-based versions.
-
-> each branch name includes its parent branches, whose features it builds upon
-
-> complete project report can be found [here](7003_Report.pdf).
 
 ![black hole render](rendered_image.png)
 
@@ -87,29 +62,9 @@ Download the NVIDIA CUDA Toolkit
 
 `nvcc` and add the flags from the [Windows instructions](#command-line)
 
-## Project tasks
-
-### Scope No1: 
-
-- Report and Code: 
-  - optimise:
-    - for multiple cores of CPUs, ✅
-    - and for GPUs, ✅
-  - distribute the program using .cuh and .h files 
-- Profile the code:
-  - See how much of RAM, Cache, Registers are used,
-  - Use profiling applications like **Nvidia Nsight Compute 2024.3.2.0** and **Intel VTune Profiler 2024.3**. ✅
-  
-### Scope No2: 
-
-- Contribute to the project:
-  - enhance the program with custom features
-  - For example: refactor Eigen library, use instead own functions and methods, ✅
-  - Use parameters through the code. ▶
-
 ## Reference
 
-The default program originites from Aula, under the module page.
+The default program originites from Aula Portal, under the module page.
 
 Papers:
 
@@ -117,4 +72,4 @@ https://oseiskar.github.io/black-hole/docs/physics.html
 
 ## Contributors
 
-J. Gergely *Gary* Hornyak
+J. Gergely Hornyak
