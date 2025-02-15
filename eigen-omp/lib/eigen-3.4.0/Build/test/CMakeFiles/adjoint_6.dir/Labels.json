@@ -1,0 +1,16 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/vaslanyan001/deleteme/Erik_raytrace/eigen-3.4.0/test/adjoint.cpp"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"BuildOfficial"
+		],
+		"name" : "adjoint_6"
+	}
+}

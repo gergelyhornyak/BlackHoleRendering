@@ -1,0 +1,67 @@
+﻿  Compiling CUDA source file kernel.cu...
+  
+  C:\Users\hornyakj\source\repos\CudaRuntime1>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.6\bin\nvcc.exe" -gencode=arch=compute_52,code=\"sm_52,compute_52\" --use-local-env -ccbin "C:\Program Files\Microsoft Visual Studio\2022\Professional\VC\Tools\MSVC\14.41.34120\bin\HostX64\x64" -x cu   -I"C:\Users\hornyakj\source\repos\CudaRuntime1\packages\libpng-msvc-x64.1.6.33.8807\build\native\../..//build/native/include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.6\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.6\include"     --keep-dir CudaRuntime1\x64\Release  -maxrregcount=0   --machine 64 --compile -cudart static    -DHAS_libpng -DWIN32 -DWIN64 -DNDEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /O2 /FS   /MD " -Xcompiler "/FdCudaRuntime1\x64\Release\vc143.pdb" -o C:\Users\hornyakj\source\repos\CudaRuntime1\CudaRuntime1\x64\Release\kernel.cu.obj "C:\Users\hornyakj\source\repos\CudaRuntime1\kernel.cu" 
+C:\Users\hornyakj\source\repos\CudaRuntime1\kernel.cuh(17): warning #1866-D: attribute does not apply to any entity
+    __declspec(__host__) __declspec(__device__) struct pix_RGB {
+                                    ^
+  
+  Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+  
+C:\Users\hornyakj\source\repos\CudaRuntime1\kernel.cuh(23): warning #1866-D: attribute does not apply to any entity
+    __declspec(__host__) __declspec(__device__) struct pix_realNumber {
+                                    ^
+  
+C:\Users\hornyakj\source\repos\CudaRuntime1\kernel.cuh(30): warning #1866-D: attribute does not apply to any entity
+    __declspec(__host__) __declspec(__device__) struct vector3D {
+                                    ^
+  
+C:\Users\hornyakj\source\repos\CudaRuntime1\kernel.cuh(36): warning #1866-D: attribute does not apply to any entity
+    __declspec(__host__) __declspec(__device__) struct config {
+                                    ^
+  
+C:\Users\hornyakj\source\repos\CudaRuntime1\kernel.cuh(17): warning #1866-D: attribute does not apply to any entity
+    __declspec(__host__) __declspec(__device__) struct pix_RGB {
+                                    ^
+  
+  Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+  
+C:\Users\hornyakj\source\repos\CudaRuntime1\kernel.cuh(23): warning #1866-D: attribute does not apply to any entity
+    __declspec(__host__) __declspec(__device__) struct pix_realNumber {
+                                    ^
+  
+C:\Users\hornyakj\source\repos\CudaRuntime1\kernel.cuh(30): warning #1866-D: attribute does not apply to any entity
+    __declspec(__host__) __declspec(__device__) struct vector3D {
+                                    ^
+  
+C:\Users\hornyakj\source\repos\CudaRuntime1\kernel.cuh(36): warning #1866-D: attribute does not apply to any entity
+    __declspec(__host__) __declspec(__device__) struct config {
+                                    ^
+  
+  kernel.cu
+  tmpxft_00000b64_00000000-7_kernel.cudafe1.cpp
+C:\Users\hornyakj\source\repos\CudaRuntime1\kernel.cu(57): warning C4244: 'initializing': conversion from 'int' to 'realNumber', possible loss of data
+C:\Users\hornyakj\source\repos\CudaRuntime1\kernel.cu(132): warning C4244: '=': conversion from 'double' to 'realNumber', possible loss of data
+C:\Users\hornyakj\source\repos\CudaRuntime1\kernel.cu(133): warning C4244: '=': conversion from 'double' to 'realNumber', possible loss of data
+  main.cpp
+C:\Users\hornyakj\source\repos\CudaRuntime1\main.cpp(19,25): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+C:\Users\hornyakj\source\repos\CudaRuntime1\main.cpp(49,12): warning C4477: 'printf' : format string '%ld' requires an argument of type 'long', but variadic argument 1 has type '_Rep'
+C:\Users\hornyakj\source\repos\CudaRuntime1\main.cpp(49,12): warning C4477:         with
+C:\Users\hornyakj\source\repos\CudaRuntime1\main.cpp(49,12): warning C4477:         [
+C:\Users\hornyakj\source\repos\CudaRuntime1\main.cpp(49,12): warning C4477:             _Rep=__int64
+C:\Users\hornyakj\source\repos\CudaRuntime1\main.cpp(49,12): warning C4477:         ]
+      C:\Users\hornyakj\source\repos\CudaRuntime1\main.cpp(49,12):
+      consider using '%lld' in the format string
+      C:\Users\hornyakj\source\repos\CudaRuntime1\main.cpp(49,12):
+      consider using '%Id' in the format string
+      C:\Users\hornyakj\source\repos\CudaRuntime1\main.cpp(49,12):
+      consider using '%I64d' in the format string
+  
+  functions.cpp
+C:\Users\hornyakj\source\repos\CudaRuntime1\functions.cpp(72,14): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     Creating library C:\Users\hornyakj\source\repos\CudaRuntime1\x64\Release\CudaRuntime1.lib and object C:\Users\hornyakj\source\repos\CudaRuntime1\x64\Release\CudaRuntime1.exp
+LINK : warning LNK4098: defaultlib 'LIBCMT' conflicts with use of other libs; use /NODEFAULTLIB:library
+  Generating code
+  Previous IPDB not found, fall back to full compilation.
+  All 19 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+  CudaRuntime1.vcxproj -> C:\Users\hornyakj\source\repos\CudaRuntime1\x64\Release\CudaRuntime1.exe
